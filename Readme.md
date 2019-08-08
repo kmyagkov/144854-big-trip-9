@@ -1,7 +1,7 @@
 # Личный проект «Большое путешествие» [![Build status][travis-image]][travis-url]
 
 * Студент: [Кирилл Мягков](https://up.htmlacademy.ru/ecmascript/9/user/144854).
-* Наставник: `Неизвестно`.
+* Наставник: [Тони Старк](https://marvel.fandom.com/ru/wiki/%D0%AD%D0%BD%D1%82%D0%BE%D0%BD%D0%B8_%D0%A1%D1%82%D0%B0%D1%80%D0%BA_(199999)).
 
 ---
 
