@@ -4,12 +4,13 @@ import {getMainMenuTemplate} from './components/trip-controls/main-menu';
 import {getFiltersTemplate} from './components/trip-controls/filters';
 import {getSortTemplate} from './components/trip-events/sort';
 import {getTripDaysTemplate} from './components/trip-events/days';
+import {tripInfoData} from './components/data';
 
 const tripInfo = document.querySelector(`.trip-info`);
 const tripControls = document.querySelector(`.trip-controls`);
 const tripEvents = document.querySelector(`.trip-events`);
 
-render(tripInfo, getTripInfoTemplate());
+render(tripInfo, getTripInfoTemplate(tripInfoData));
 render(tripControls, getMainMenuTemplate());
 render(tripControls, getFiltersTemplate());
 render(tripEvents, getSortTemplate());
