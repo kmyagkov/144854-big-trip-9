@@ -1,4 +1,4 @@
-export const getEventEditTemplate = () => {
+export const getEventEditTemplate = ({photos}) => {
   return `<li class="trip-events__item">
             <form class="event  event--edit" action="#" method="post">
               <header class="event__header">
@@ -176,11 +176,7 @@ export const getEventEditTemplate = () => {
   
                   <div class="event__photos-container">
                     <div class="event__photos-tape">
-                      <img class="event__photo" src="img/photos/1.jpg" alt="Event photo">
-                      <img class="event__photo" src="img/photos/2.jpg" alt="Event photo">
-                      <img class="event__photo" src="img/photos/3.jpg" alt="Event photo">
-                      <img class="event__photo" src="img/photos/4.jpg" alt="Event photo">
-                      <img class="event__photo" src="img/photos/5.jpg" alt="Event photo">
+                      ${photos.map((url) => `<img class="event__photo" src=${url} alt="Event photo">`).join(``)}
                     </div>
                   </div>
                 </section>
